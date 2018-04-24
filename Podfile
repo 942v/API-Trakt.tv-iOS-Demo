@@ -8,10 +8,6 @@ target 'TraktDemo' do
 
   pod 'AFNetworking'
   pod 'AFNetworkActivityLogger', :git => 'https://github.com/AFNetworking/AFNetworkActivityLogger.git'
-  pod 'ISO8601'
-  pod 'PSTAlertController'
-  pod 'DateTools'
-  pod 'Shimmer'
   pod 'Reachability'
   pod 'SDWebImage'
   pod 'CocoaLumberjack'
