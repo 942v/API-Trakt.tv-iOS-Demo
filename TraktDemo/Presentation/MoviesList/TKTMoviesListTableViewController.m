@@ -296,7 +296,7 @@ forRowAtIndexPath:(NSIndexPath *)indexPath {
 - (TKTMovie *)movieAtIndex:(NSInteger)index {
     
     TKTMovie *movieToReturn;
-    if (self.searchString) {
+    if ([self.data.firstObject isKindOfClass:[TKTSearch class]]) {
         TKTSearch *search = [self.data objectAtIndex:index];
         movieToReturn = search.movie;
     }else{
