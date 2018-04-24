@@ -1,17 +1,17 @@
 //
-//  AppDelegate.m
+//  TKTAppDelegate.m
 //  TraktDemo
 //
 //  Created by Guillermo Sáenz on 4/24/18.
 //
 
-#import "AppDelegate.h"
+#import "TKTAppDelegate.h"
 
-@interface AppDelegate ()
+@interface TKTAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation TKTAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {

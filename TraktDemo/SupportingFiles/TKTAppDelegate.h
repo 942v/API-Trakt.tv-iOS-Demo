@@ -1,13 +1,13 @@
 //
-//  AppDelegate.h
+//  TKTAppDelegate.h
 //  TraktDemo
 //
 //  Created by Guillermo Sáenz on 4/24/18.
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface TKTAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

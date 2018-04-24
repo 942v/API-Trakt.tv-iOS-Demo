@@ -7,25 +7,98 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		11312A08208F71100048DA2F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11312A07208F71100048DA2F /* AppDelegate.m */; };
-		11312A0B208F71100048DA2F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11312A0A208F71100048DA2F /* ViewController.m */; };
+		11312A08208F71100048DA2F /* TKTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11312A07208F71100048DA2F /* TKTAppDelegate.m */; };
 		11312A0E208F71100048DA2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11312A0C208F71100048DA2F /* Main.storyboard */; };
 		11312A10208F71120048DA2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11312A0F208F71120048DA2F /* Assets.xcassets */; };
 		11312A13208F71120048DA2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11312A11208F71120048DA2F /* LaunchScreen.storyboard */; };
 		11312A16208F71120048DA2F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11312A15208F71120048DA2F /* main.m */; };
+		11312A2A208F73850048DA2F /* TKTHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 11312A29208F73850048DA2F /* TKTHTTPSessionManager.m */; };
+		11312A2F208F74720048DA2F /* TKTJSONResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 11312A2E208F74720048DA2F /* TKTJSONResponseSerializer.m */; };
+		11312A34208F74B60048DA2F /* TKTError.m in Sources */ = {isa = PBXBuildFile; fileRef = 11312A33208F74B60048DA2F /* TKTError.m */; };
+		11312A37208F77B80048DA2F /* TKTWebServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 11312A36208F77B80048DA2F /* TKTWebServices.m */; };
+		11312A3B208F83BA0048DA2F /* TKTLoggerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 11312A3A208F83BA0048DA2F /* TKTLoggerHelper.m */; };
+		11312A3F208F855D0048DA2F /* TKTMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = 11312A3E208F855D0048DA2F /* TKTMovie.m */; };
+		11312A43208F85A10048DA2F /* TKTBaseWebServiceObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 11312A42208F85A10048DA2F /* TKTBaseWebServiceObject.m */; };
+		11312A46208F86FE0048DA2F /* TKTMovieIdentifiers.m in Sources */ = {isa = PBXBuildFile; fileRef = 11312A45208F86FE0048DA2F /* TKTMovieIdentifiers.m */; };
+		11312A4C208F8AF10048DA2F /* TKTMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = 11312A4B208F8AF10048DA2F /* TKTMetadata.m */; };
+		11312A50208F8F030048DA2F /* TKTDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 11312A4F208F8EE80048DA2F /* TKTDataManager.m */; };
+		11312A53208F91850048DA2F /* TKTErrorsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 11312A52208F91680048DA2F /* TKTErrorsManager.m */; };
+		11312A56208F92A60048DA2F /* TKTMoviesList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11312A55208F92A60048DA2F /* TKTMoviesList.storyboard */; };
+		11312A59208F92D20048DA2F /* TKTMoviesListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11312A58208F92D20048DA2F /* TKTMoviesListTableViewController.m */; };
+		11312A5E208F96D30048DA2F /* UIViewController+TKTExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 11312A5D208F96D30048DA2F /* UIViewController+TKTExtras.m */; };
+		11312A62208F98DA0048DA2F /* TKTMoviesListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11312A61208F98DA0048DA2F /* TKTMoviesListTableViewCell.m */; };
+		11312A66208F99370048DA2F /* TKTGenericErrorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11312A65208F99370048DA2F /* TKTGenericErrorTableViewCell.m */; };
+		11312A6A208F99540048DA2F /* TKTNoInternetErrorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11312A69208F99540048DA2F /* TKTNoInternetErrorTableViewCell.m */; };
+		11312A72208FBB540048DA2F /* FATHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 11312A6E208FBA180048DA2F /* FATHTTPSessionManager.m */; };
+		11312A79208FBD0D0048DA2F /* FATWebServices.m in Sources */ = {isa = PBXBuildFile; fileRef = 11312A77208FBB760048DA2F /* FATWebServices.m */; };
+		11312A7C208FBE030048DA2F /* FATMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = 11312A7B208FBE030048DA2F /* FATMovie.m */; };
+		11312A82208FBE8B0048DA2F /* FATMovieLogo.m in Sources */ = {isa = PBXBuildFile; fileRef = 11312A81208FBE8B0048DA2F /* FATMovieLogo.m */; };
+		11312A85208FC9980048DA2F /* TKTBaseContainer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11312A84208FC9980048DA2F /* TKTBaseContainer.storyboard */; };
+		11312A88208FC9A60048DA2F /* TKTBaseContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11312A87208FC9A60048DA2F /* TKTBaseContainerViewController.m */; };
+		11312A8F208FD40C0048DA2F /* TKTSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 11312A8E208FD40C0048DA2F /* TKTSearch.m */; };
+		97AE477233A27F868A01B58B /* Pods_TraktDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D95289B8BED969800D6324C5 /* Pods_TraktDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		11312A03208F71100048DA2F /* TraktDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TraktDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		11312A06208F71100048DA2F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		11312A07208F71100048DA2F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		11312A09208F71100048DA2F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		11312A0A208F71100048DA2F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		11312A0D208F71100048DA2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		11312A06208F71100048DA2F /* TKTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKTAppDelegate.h; sourceTree = "<group>"; };
+		11312A07208F71100048DA2F /* TKTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKTAppDelegate.m; sourceTree = "<group>"; };
 		11312A0F208F71120048DA2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		11312A12208F71120048DA2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11312A14208F71120048DA2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11312A15208F71120048DA2F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		11312A24208F72250048DA2F /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "es-419"; path = "es-419.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		11312A25208F72250048DA2F /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "es-419"; path = "es-419.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
+		11312A28208F73850048DA2F /* TKTHTTPSessionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKTHTTPSessionManager.h; sourceTree = "<group>"; };
+		11312A29208F73850048DA2F /* TKTHTTPSessionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKTHTTPSessionManager.m; sourceTree = "<group>"; };
+		11312A2D208F74720048DA2F /* TKTJSONResponseSerializer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKTJSONResponseSerializer.h; sourceTree = "<group>"; };
+		11312A2E208F74720048DA2F /* TKTJSONResponseSerializer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKTJSONResponseSerializer.m; sourceTree = "<group>"; };
+		11312A32208F74B60048DA2F /* TKTError.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKTError.h; sourceTree = "<group>"; };
+		11312A33208F74B60048DA2F /* TKTError.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKTError.m; sourceTree = "<group>"; };
+		11312A35208F77B80048DA2F /* TKTWebServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKTWebServices.h; sourceTree = "<group>"; };
+		11312A36208F77B80048DA2F /* TKTWebServices.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKTWebServices.m; sourceTree = "<group>"; };
+		11312A39208F83BA0048DA2F /* TKTLoggerHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKTLoggerHelper.h; sourceTree = "<group>"; };
+		11312A3A208F83BA0048DA2F /* TKTLoggerHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKTLoggerHelper.m; sourceTree = "<group>"; };
+		11312A3D208F855D0048DA2F /* TKTMovie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKTMovie.h; sourceTree = "<group>"; };
+		11312A3E208F855D0048DA2F /* TKTMovie.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKTMovie.m; sourceTree = "<group>"; };
+		11312A41208F85A10048DA2F /* TKTBaseWebServiceObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKTBaseWebServiceObject.h; sourceTree = "<group>"; };
+		11312A42208F85A10048DA2F /* TKTBaseWebServiceObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKTBaseWebServiceObject.m; sourceTree = "<group>"; };
+		11312A44208F86FE0048DA2F /* TKTMovieIdentifiers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKTMovieIdentifiers.h; sourceTree = "<group>"; };
+		11312A45208F86FE0048DA2F /* TKTMovieIdentifiers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKTMovieIdentifiers.m; sourceTree = "<group>"; };
+		11312A4A208F8AF10048DA2F /* TKTMetadata.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKTMetadata.h; sourceTree = "<group>"; };
+		11312A4B208F8AF10048DA2F /* TKTMetadata.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKTMetadata.m; sourceTree = "<group>"; };
+		11312A4E208F8EE80048DA2F /* TKTDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKTDataManager.h; sourceTree = "<group>"; };
+		11312A4F208F8EE80048DA2F /* TKTDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKTDataManager.m; sourceTree = "<group>"; };
+		11312A51208F91680048DA2F /* TKTErrorsManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKTErrorsManager.h; sourceTree = "<group>"; };
+		11312A52208F91680048DA2F /* TKTErrorsManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKTErrorsManager.m; sourceTree = "<group>"; };
+		11312A55208F92A60048DA2F /* TKTMoviesList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TKTMoviesList.storyboard; sourceTree = "<group>"; };
+		11312A57208F92D20048DA2F /* TKTMoviesListTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKTMoviesListTableViewController.h; sourceTree = "<group>"; };
+		11312A58208F92D20048DA2F /* TKTMoviesListTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKTMoviesListTableViewController.m; sourceTree = "<group>"; };
+		11312A5A208F954F0048DA2F /* TKTErrorsManagerNotificationsIndex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKTErrorsManagerNotificationsIndex.h; sourceTree = "<group>"; };
+		11312A5C208F96D30048DA2F /* UIViewController+TKTExtras.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TKTExtras.h"; sourceTree = "<group>"; };
+		11312A5D208F96D30048DA2F /* UIViewController+TKTExtras.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TKTExtras.m"; sourceTree = "<group>"; };
+		11312A60208F98DA0048DA2F /* TKTMoviesListTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKTMoviesListTableViewCell.h; sourceTree = "<group>"; };
+		11312A61208F98DA0048DA2F /* TKTMoviesListTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKTMoviesListTableViewCell.m; sourceTree = "<group>"; };
+		11312A64208F99370048DA2F /* TKTGenericErrorTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKTGenericErrorTableViewCell.h; sourceTree = "<group>"; };
+		11312A65208F99370048DA2F /* TKTGenericErrorTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKTGenericErrorTableViewCell.m; sourceTree = "<group>"; };
+		11312A68208F99540048DA2F /* TKTNoInternetErrorTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKTNoInternetErrorTableViewCell.h; sourceTree = "<group>"; };
+		11312A69208F99540048DA2F /* TKTNoInternetErrorTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKTNoInternetErrorTableViewCell.m; sourceTree = "<group>"; };
+		11312A6D208FBA180048DA2F /* FATHTTPSessionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FATHTTPSessionManager.h; sourceTree = "<group>"; };
+		11312A6E208FBA180048DA2F /* FATHTTPSessionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FATHTTPSessionManager.m; sourceTree = "<group>"; };
+		11312A75208FBB760048DA2F /* FATWebServices.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FATWebServices.h; sourceTree = "<group>"; };
+		11312A77208FBB760048DA2F /* FATWebServices.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FATWebServices.m; sourceTree = "<group>"; };
+		11312A7A208FBE030048DA2F /* FATMovie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FATMovie.h; sourceTree = "<group>"; };
+		11312A7B208FBE030048DA2F /* FATMovie.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FATMovie.m; sourceTree = "<group>"; };
+		11312A80208FBE8B0048DA2F /* FATMovieLogo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FATMovieLogo.h; sourceTree = "<group>"; };
+		11312A81208FBE8B0048DA2F /* FATMovieLogo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FATMovieLogo.m; sourceTree = "<group>"; };
+		11312A84208FC9980048DA2F /* TKTBaseContainer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TKTBaseContainer.storyboard; sourceTree = "<group>"; };
+		11312A86208FC9A60048DA2F /* TKTBaseContainerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKTBaseContainerViewController.h; sourceTree = "<group>"; };
+		11312A87208FC9A60048DA2F /* TKTBaseContainerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKTBaseContainerViewController.m; sourceTree = "<group>"; };
+		11312A8D208FD40C0048DA2F /* TKTSearch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKTSearch.h; sourceTree = "<group>"; };
+		11312A8E208FD40C0048DA2F /* TKTSearch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TKTSearch.m; sourceTree = "<group>"; };
+		66A96F0E6D29F8EEB0AF08BF /* Pods-TraktDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TraktDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-TraktDemo/Pods-TraktDemo.release.xcconfig"; sourceTree = "<group>"; };
+		80027984ACE99E13B9545281 /* Pods-TraktDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TraktDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TraktDemo/Pods-TraktDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		D95289B8BED969800D6324C5 /* Pods_TraktDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TraktDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE386A7419A2EE9E31357560 /* Pods-TraktDemo.mocks.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TraktDemo.mocks.xcconfig"; path = "Pods/Target Support Files/Pods-TraktDemo/Pods-TraktDemo.mocks.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97AE477233A27F868A01B58B /* Pods_TraktDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +118,8 @@
 			children = (
 				11312A05208F71100048DA2F /* TraktDemo */,
 				11312A04208F71100048DA2F /* Products */,
+				F991BEC651D697D14304BA0B /* Pods */,
+				8FFDB0B5B9CAA7ED042BE9F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,17 +134,312 @@
 		11312A05208F71100048DA2F /* TraktDemo */ = {
 			isa = PBXGroup;
 			children = (
-				11312A06208F71100048DA2F /* AppDelegate.h */,
-				11312A07208F71100048DA2F /* AppDelegate.m */,
-				11312A09208F71100048DA2F /* ViewController.h */,
-				11312A0A208F71100048DA2F /* ViewController.m */,
-				11312A0C208F71100048DA2F /* Main.storyboard */,
+				11312A1C208F714E0048DA2F /* Assets */,
+				11312A38208F839E0048DA2F /* Helpers */,
+				11312A2B208F74550048DA2F /* WebServices */,
+				11312A26208F73550048DA2F /* Managers */,
+				11312A1E208F71710048DA2F /* Presentation */,
+				11312A1D208F71580048DA2F /* SupportingFiles */,
+			);
+			path = TraktDemo;
+			sourceTree = "<group>";
+		};
+		11312A1C208F714E0048DA2F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
 				11312A0F208F71120048DA2F /* Assets.xcassets */,
-				11312A11208F71120048DA2F /* LaunchScreen.storyboard */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		11312A1D208F71580048DA2F /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				11312A06208F71100048DA2F /* TKTAppDelegate.h */,
+				11312A07208F71100048DA2F /* TKTAppDelegate.m */,
 				11312A14208F71120048DA2F /* Info.plist */,
 				11312A15208F71120048DA2F /* main.m */,
 			);
-			path = TraktDemo;
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		11312A1E208F71710048DA2F /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				11312A63208F99230048DA2F /* Generic */,
+				11312A83208FC9890048DA2F /* BaseContainer */,
+				11312A54208F928A0048DA2F /* MoviesList */,
+				11312A1F208F71790048DA2F /* Main */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		11312A1F208F71790048DA2F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				11312A0C208F71100048DA2F /* Main.storyboard */,
+				11312A11208F71120048DA2F /* LaunchScreen.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		11312A26208F73550048DA2F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				11312A27208F73690048DA2F /* Session */,
+				11312A4D208F8ED10048DA2F /* Data */,
+				11312A30208F74A00048DA2F /* Errors */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		11312A27208F73690048DA2F /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				11312A6C208FB9A30048DA2F /* Trakt */,
+				11312A6B208FB99B0048DA2F /* Fanart */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		11312A2B208F74550048DA2F /* WebServices */ = {
+			isa = PBXGroup;
+			children = (
+				11312A2C208F74630048DA2F /* Serializer */,
+				11312A73208FBB610048DA2F /* Trakt */,
+				11312A74208FBB680048DA2F /* Fanart */,
+			);
+			path = WebServices;
+			sourceTree = "<group>";
+		};
+		11312A2C208F74630048DA2F /* Serializer */ = {
+			isa = PBXGroup;
+			children = (
+				11312A2D208F74720048DA2F /* TKTJSONResponseSerializer.h */,
+				11312A2E208F74720048DA2F /* TKTJSONResponseSerializer.m */,
+			);
+			path = Serializer;
+			sourceTree = "<group>";
+		};
+		11312A30208F74A00048DA2F /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				11312A31208F74A90048DA2F /* Objects */,
+				11312A51208F91680048DA2F /* TKTErrorsManager.h */,
+				11312A52208F91680048DA2F /* TKTErrorsManager.m */,
+				11312A5A208F954F0048DA2F /* TKTErrorsManagerNotificationsIndex.h */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		11312A31208F74A90048DA2F /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				11312A32208F74B60048DA2F /* TKTError.h */,
+				11312A33208F74B60048DA2F /* TKTError.m */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		11312A38208F839E0048DA2F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				11312A5B208F96C20048DA2F /* Categories */,
+				11312A39208F83BA0048DA2F /* TKTLoggerHelper.h */,
+				11312A3A208F83BA0048DA2F /* TKTLoggerHelper.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		11312A3C208F852F0048DA2F /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				11312A48208F8AB90048DA2F /* Base */,
+				11312A8C208FD3F20048DA2F /* Search */,
+				11312A47208F8AB20048DA2F /* Movies */,
+				11312A49208F8ADF0048DA2F /* Metadata */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		11312A47208F8AB20048DA2F /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				11312A3D208F855D0048DA2F /* TKTMovie.h */,
+				11312A3E208F855D0048DA2F /* TKTMovie.m */,
+				11312A44208F86FE0048DA2F /* TKTMovieIdentifiers.h */,
+				11312A45208F86FE0048DA2F /* TKTMovieIdentifiers.m */,
+			);
+			path = Movies;
+			sourceTree = "<group>";
+		};
+		11312A48208F8AB90048DA2F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				11312A41208F85A10048DA2F /* TKTBaseWebServiceObject.h */,
+				11312A42208F85A10048DA2F /* TKTBaseWebServiceObject.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		11312A49208F8ADF0048DA2F /* Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				11312A4A208F8AF10048DA2F /* TKTMetadata.h */,
+				11312A4B208F8AF10048DA2F /* TKTMetadata.m */,
+			);
+			path = Metadata;
+			sourceTree = "<group>";
+		};
+		11312A4D208F8ED10048DA2F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				11312A4E208F8EE80048DA2F /* TKTDataManager.h */,
+				11312A4F208F8EE80048DA2F /* TKTDataManager.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		11312A54208F928A0048DA2F /* MoviesList */ = {
+			isa = PBXGroup;
+			children = (
+				11312A5F208F98CB0048DA2F /* Cells */,
+				11312A57208F92D20048DA2F /* TKTMoviesListTableViewController.h */,
+				11312A58208F92D20048DA2F /* TKTMoviesListTableViewController.m */,
+				11312A55208F92A60048DA2F /* TKTMoviesList.storyboard */,
+			);
+			path = MoviesList;
+			sourceTree = "<group>";
+		};
+		11312A5B208F96C20048DA2F /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				11312A5C208F96D30048DA2F /* UIViewController+TKTExtras.h */,
+				11312A5D208F96D30048DA2F /* UIViewController+TKTExtras.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		11312A5F208F98CB0048DA2F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				11312A60208F98DA0048DA2F /* TKTMoviesListTableViewCell.h */,
+				11312A61208F98DA0048DA2F /* TKTMoviesListTableViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		11312A63208F99230048DA2F /* Generic */ = {
+			isa = PBXGroup;
+			children = (
+				11312A67208F993B0048DA2F /* Cells */,
+			);
+			path = Generic;
+			sourceTree = "<group>";
+		};
+		11312A67208F993B0048DA2F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				11312A64208F99370048DA2F /* TKTGenericErrorTableViewCell.h */,
+				11312A65208F99370048DA2F /* TKTGenericErrorTableViewCell.m */,
+				11312A68208F99540048DA2F /* TKTNoInternetErrorTableViewCell.h */,
+				11312A69208F99540048DA2F /* TKTNoInternetErrorTableViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		11312A6B208FB99B0048DA2F /* Fanart */ = {
+			isa = PBXGroup;
+			children = (
+				11312A6D208FBA180048DA2F /* FATHTTPSessionManager.h */,
+				11312A6E208FBA180048DA2F /* FATHTTPSessionManager.m */,
+			);
+			path = Fanart;
+			sourceTree = "<group>";
+		};
+		11312A6C208FB9A30048DA2F /* Trakt */ = {
+			isa = PBXGroup;
+			children = (
+				11312A28208F73850048DA2F /* TKTHTTPSessionManager.h */,
+				11312A29208F73850048DA2F /* TKTHTTPSessionManager.m */,
+			);
+			path = Trakt;
+			sourceTree = "<group>";
+		};
+		11312A73208FBB610048DA2F /* Trakt */ = {
+			isa = PBXGroup;
+			children = (
+				11312A3C208F852F0048DA2F /* Objects */,
+				11312A35208F77B80048DA2F /* TKTWebServices.h */,
+				11312A36208F77B80048DA2F /* TKTWebServices.m */,
+			);
+			path = Trakt;
+			sourceTree = "<group>";
+		};
+		11312A74208FBB680048DA2F /* Fanart */ = {
+			isa = PBXGroup;
+			children = (
+				11312A76208FBB760048DA2F /* Objects */,
+				11312A75208FBB760048DA2F /* FATWebServices.h */,
+				11312A77208FBB760048DA2F /* FATWebServices.m */,
+			);
+			path = Fanart;
+			sourceTree = "<group>";
+		};
+		11312A76208FBB760048DA2F /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				11312A78208FBB950048DA2F /* Movies */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		11312A78208FBB950048DA2F /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				11312A7A208FBE030048DA2F /* FATMovie.h */,
+				11312A7B208FBE030048DA2F /* FATMovie.m */,
+				11312A80208FBE8B0048DA2F /* FATMovieLogo.h */,
+				11312A81208FBE8B0048DA2F /* FATMovieLogo.m */,
+			);
+			path = Movies;
+			sourceTree = "<group>";
+		};
+		11312A83208FC9890048DA2F /* BaseContainer */ = {
+			isa = PBXGroup;
+			children = (
+				11312A86208FC9A60048DA2F /* TKTBaseContainerViewController.h */,
+				11312A87208FC9A60048DA2F /* TKTBaseContainerViewController.m */,
+				11312A84208FC9980048DA2F /* TKTBaseContainer.storyboard */,
+			);
+			path = BaseContainer;
+			sourceTree = "<group>";
+		};
+		11312A8C208FD3F20048DA2F /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				11312A8D208FD40C0048DA2F /* TKTSearch.h */,
+				11312A8E208FD40C0048DA2F /* TKTSearch.m */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		8FFDB0B5B9CAA7ED042BE9F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D95289B8BED969800D6324C5 /* Pods_TraktDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F991BEC651D697D14304BA0B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				80027984ACE99E13B9545281 /* Pods-TraktDemo.debug.xcconfig */,
+				66A96F0E6D29F8EEB0AF08BF /* Pods-TraktDemo.release.xcconfig */,
+				DE386A7419A2EE9E31357560 /* Pods-TraktDemo.mocks.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,9 +449,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 11312A19208F71120048DA2F /* Build configuration list for PBXNativeTarget "TraktDemo" */;
 			buildPhases = (
+				DB259833DB789E66F0B43C21 /* [CP] Check Pods Manifest.lock */,
 				113129FF208F71100048DA2F /* Sources */,
 				11312A00208F71100048DA2F /* Frameworks */,
 				11312A01208F71100048DA2F /* Resources */,
+				27BCE3D862EABFC2F59EBFB1 /* [CP] Embed Pods Frameworks */,
+				3DB8CBE4BB34DC8B078575C9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -97,6 +471,7 @@
 		113129FB208F71100048DA2F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = TKT;
 				LastUpgradeCheck = 0930;
 				TargetAttributes = {
 					11312A02208F71100048DA2F = {
@@ -109,8 +484,7 @@
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
-				Base,
+				"es-419",
 			);
 			mainGroup = 113129FA208F71100048DA2F;
 			productRefGroup = 11312A04208F71100048DA2F /* Products */;
@@ -128,6 +502,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				11312A13208F71120048DA2F /* LaunchScreen.storyboard in Resources */,
+				11312A85208FC9980048DA2F /* TKTBaseContainer.storyboard in Resources */,
+				11312A56208F92A60048DA2F /* TKTMoviesList.storyboard in Resources */,
 				11312A10208F71120048DA2F /* Assets.xcassets in Resources */,
 				11312A0E208F71100048DA2F /* Main.storyboard in Resources */,
 			);
@@ -135,14 +511,105 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		27BCE3D862EABFC2F59EBFB1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TraktDemo/Pods-TraktDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworkActivityLogger/AFNetworkActivityLogger.framework",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/DateTools/DateTools.framework",
+				"${BUILT_PRODUCTS_DIR}/ISO8601/ISO8601.framework",
+				"${BUILT_PRODUCTS_DIR}/PSTAlertController/PSTAlertController.framework",
+				"${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/Shimmer/Shimmer.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworkActivityLogger.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DateTools.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ISO8601.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PSTAlertController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Shimmer.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TraktDemo/Pods-TraktDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3DB8CBE4BB34DC8B078575C9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TraktDemo/Pods-TraktDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB259833DB789E66F0B43C21 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TraktDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		113129FF208F71100048DA2F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11312A0B208F71100048DA2F /* ViewController.m in Sources */,
+				11312A5E208F96D30048DA2F /* UIViewController+TKTExtras.m in Sources */,
+				11312A59208F92D20048DA2F /* TKTMoviesListTableViewController.m in Sources */,
+				11312A3F208F855D0048DA2F /* TKTMovie.m in Sources */,
+				11312A82208FBE8B0048DA2F /* FATMovieLogo.m in Sources */,
+				11312A88208FC9A60048DA2F /* TKTBaseContainerViewController.m in Sources */,
+				11312A43208F85A10048DA2F /* TKTBaseWebServiceObject.m in Sources */,
+				11312A72208FBB540048DA2F /* FATHTTPSessionManager.m in Sources */,
+				11312A37208F77B80048DA2F /* TKTWebServices.m in Sources */,
+				11312A50208F8F030048DA2F /* TKTDataManager.m in Sources */,
+				11312A2F208F74720048DA2F /* TKTJSONResponseSerializer.m in Sources */,
 				11312A16208F71120048DA2F /* main.m in Sources */,
-				11312A08208F71100048DA2F /* AppDelegate.m in Sources */,
+				11312A7C208FBE030048DA2F /* FATMovie.m in Sources */,
+				11312A6A208F99540048DA2F /* TKTNoInternetErrorTableViewCell.m in Sources */,
+				11312A46208F86FE0048DA2F /* TKTMovieIdentifiers.m in Sources */,
+				11312A53208F91850048DA2F /* TKTErrorsManager.m in Sources */,
+				11312A66208F99370048DA2F /* TKTGenericErrorTableViewCell.m in Sources */,
+				11312A3B208F83BA0048DA2F /* TKTLoggerHelper.m in Sources */,
+				11312A4C208F8AF10048DA2F /* TKTMetadata.m in Sources */,
+				11312A62208F98DA0048DA2F /* TKTMoviesListTableViewCell.m in Sources */,
+				11312A79208FBD0D0048DA2F /* FATWebServices.m in Sources */,
+				11312A2A208F73850048DA2F /* TKTHTTPSessionManager.m in Sources */,
+				11312A08208F71100048DA2F /* TKTAppDelegate.m in Sources */,
+				11312A34208F74B60048DA2F /* TKTError.m in Sources */,
+				11312A8F208FD40C0048DA2F /* TKTSearch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +619,7 @@
 		11312A0C208F71100048DA2F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				11312A0D208F71100048DA2F /* Base */,
+				11312A24208F72250048DA2F /* es-419 */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -160,7 +627,7 @@
 		11312A11208F71120048DA2F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				11312A12208F71120048DA2F /* Base */,
+				11312A25208F72250048DA2F /* es-419 */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -172,6 +639,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -219,7 +687,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -230,6 +698,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -271,7 +740,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -280,11 +749,24 @@
 		};
 		11312A1A208F71120048DA2F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80027984ACE99E13B9545281 /* Pods-TraktDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AXGN3HZ95S;
-				INFOPLIST_FILE = TraktDemo/Info.plist;
+				FAT_API_KEY = "@\"d95c115ca42491c17c8c87113a7b0dc8\"";
+				FAT_BASE_URL = "@\"https://webservice.fanart.tv/v3/\"";
+				FAT_CLIENT_KEY = "@\"4aff81674e3580f85548819553b4de07\"";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"TKT_BASE_URL=\"$(TKT_BASE_URL)\"",
+					"TKT_CLIENT_ID=\"$(TKT_CLIENT_ID)\"",
+					"FAT_API_KEY=\"$(FAT_API_KEY)\"",
+					"FAT_CLIENT_KEY=\"$(FAT_CLIENT_KEY)\"",
+					"FAT_BASE_URL=\"$(FAT_BASE_URL)\"",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/TraktDemo/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -292,16 +774,31 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dev.com.gs.TraktDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TKT_BASE_URL = "@\"https://api.trakt.tv/\"";
+				TKT_CLIENT_ID = "@\"4634ab3b73aef2e4101d9b1c5007f97fecb05eca7e8e62f5e57102a78eb57c62\"";
 			};
 			name = Debug;
 		};
 		11312A1B208F71120048DA2F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66A96F0E6D29F8EEB0AF08BF /* Pods-TraktDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AXGN3HZ95S;
-				INFOPLIST_FILE = TraktDemo/Info.plist;
+				FAT_API_KEY = "@\"d95c115ca42491c17c8c87113a7b0dc8\"";
+				FAT_BASE_URL = "@\"https://webservice.fanart.tv/v3/\"";
+				FAT_CLIENT_KEY = "@\"4aff81674e3580f85548819553b4de07\"";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"TKT_BASE_URL=\"$(TKT_BASE_URL)\"",
+					"TKT_CLIENT_ID=\"$(TKT_CLIENT_ID)\"",
+					"FAT_API_KEY=\"$(FAT_API_KEY)\"",
+					"FAT_CLIENT_KEY=\"$(FAT_CLIENT_KEY)\"",
+					"FAT_BASE_URL=\"$(FAT_BASE_URL)\"",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/TraktDemo/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,8 +806,101 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dev.com.gs.TraktDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TKT_BASE_URL = "@\"https://api.trakt.tv/\"";
+				TKT_CLIENT_ID = "@\"4634ab3b73aef2e4101d9b1c5007f97fecb05eca7e8e62f5e57102a78eb57c62\"";
 			};
 			name = Release;
+		};
+		11312A20208F72130048DA2F /* Mocks */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Mocks;
+		};
+		11312A21208F72130048DA2F /* Mocks */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE386A7419A2EE9E31357560 /* Pods-TraktDemo.mocks.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AXGN3HZ95S;
+				FAT_API_KEY = "@\"d95c115ca42491c17c8c87113a7b0dc8\"";
+				FAT_BASE_URL = "@\"https://private-ebd15-fanarttv.apiary-mock.com/v3/\"";
+				FAT_CLIENT_KEY = "@\"4aff81674e3580f85548819553b4de07\"";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"TKT_BASE_URL=\"$(TKT_BASE_URL)\"",
+					"TKT_CLIENT_ID=\"$(TKT_CLIENT_ID)\"",
+					"FAT_API_KEY=\"$(FAT_API_KEY)\"",
+					"FAT_CLIENT_KEY=\"$(FAT_CLIENT_KEY)\"",
+					"FAT_BASE_URL=\"$(FAT_BASE_URL)\"",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/TraktDemo/SupportingFiles/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.com.gs.TraktDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TKT_BASE_URL = "@\"https://private-amnesiac-5f1b01-trakt.apiary-proxy.com\"";
+				TKT_CLIENT_ID = "@\"4634ab3b73aef2e4101d9b1c5007f97fecb05eca7e8e62f5e57102a78eb57c62\"";
+			};
+			name = Mocks;
 		};
 /* End XCBuildConfiguration section */
 
@@ -319,6 +909,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				11312A17208F71120048DA2F /* Debug */,
+				11312A20208F72130048DA2F /* Mocks */,
 				11312A18208F71120048DA2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -328,6 +919,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				11312A1A208F71120048DA2F /* Debug */,
+				11312A21208F72130048DA2F /* Mocks */,
 				11312A1B208F71120048DA2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
